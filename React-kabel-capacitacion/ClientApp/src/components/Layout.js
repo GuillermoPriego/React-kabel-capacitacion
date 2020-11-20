@@ -3,7 +3,7 @@ import * as React from 'react'
 const Layout = ({ children }) => {
     return (
         <div>
-            <header>App</header>
+            <header className="p-4">App</header>
             <main>
                 {children}
             </main>
