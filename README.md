@@ -2,7 +2,7 @@
 
 **Herramientas utilizadas**
 
-- React-query
-- Redux
-- Tailwindcss
-- React-router-dom
+- React-query (server state)
+- Redux (client state)
+- Tailwindcss (styles)
+- React-router-dom (routing)
