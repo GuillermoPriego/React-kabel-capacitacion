@@ -9,7 +9,7 @@ const DetailedPostView = ({ location, history: { goBack } }) => {
             <span className="cursor-pointer hover:text-blue-700" onClick={goBack}>Atras</span>
             <h2 className="text-2xl">{post.title}</h2>
             <hr className="my-2" />
-            <p dangerouslySetInnerHTML={{ __html: post["content:encoded"] }}></p>
+            <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
         </>)
 }
 

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { ReactQueryDevtools } from "react-query-devtools";
 import { Route, Switch } from 'react-router-dom';
 import FeedForm from './components/feeds/FeedForm';
 import FeedList from './components/feeds/FeedList';
