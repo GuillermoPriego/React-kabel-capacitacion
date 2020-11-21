@@ -11,7 +11,6 @@ env:
     AZURE_WEBAPP_NAME: React-kabel-capacitacion20201121014408
     AZURE_WEBAPP_PACKAGE_PATH: './published'
     NETCORE_VERSION: 3.1.301
-    NODE_VERSION: 15.0.1
 
 jobs:
   build:
@@ -25,11 +24,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.NETCORE_VERSION }}
-
-    - name: Use Node.js ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ env.NODE_VERSION }}
 
     - name: Install dependencies
       run: dotnet restore
