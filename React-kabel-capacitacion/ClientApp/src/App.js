@@ -5,6 +5,7 @@ import FeedList from './components/feeds/FeedList';
 import Layout from './components/Layout';
 import DetailedPostView from './components/views/DetailedPostView';
 import GridPostView from './components/views/GridPostView';
+import NotFoundView from "./components/views/NotFoundView";
 import './styles/app.css'
 
 const App = () => {
@@ -17,11 +18,11 @@ const App = () => {
                         <FeedForm />
                     </div>
                 </div>
-                <div>
+                <div className="w-full">
                     <Switch>
                         <Route exact path="/" component={GridPostView} />
                         <Route exact path="/feed" component={DetailedPostView} />
-                        <Route component={() => <h4>No existe lo que buscas</h4>} />
+                        <Route component={NotFoundView} />
                     </Switch>
                 </div>
             </div>
