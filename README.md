@@ -1,3 +1,5 @@
+![Capacitacion React Build](https://github.com/GuillermoPriego/React-kabel-capacitacion/workflows/Capacitacion%20React%20Build/badge.svg?branch=master)
+
 # Prueba final del plan de capacitacion de kabel (React)
 
 **Herramientas utilizadas**
