@@ -2,9 +2,10 @@
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import useFeed from '../../hooks/useFeed';
+import NoData from "../utils/NoData";
 
 const GridPostView = ({ selected, feeds }) => {
-    if (!selected || !feeds || !feeds.length) return "No hay feed seleccionada";
+    if (!selected || !feeds || !feeds.length) return <NoData text="No hay feed selecionada" />;
 
     const url = feeds.find(f => f.name === selected)?.url;
     return <FeedReader name={selected} url={url} />;
